@@ -11,13 +11,13 @@ This React Native application allows users to compress videos and images efficie
 - **Efficient Compression**: Uses native mobile processing power for fast and efficient compression.
 - **Save Compressed Files**: Save compressed videos and images to the device's gallery.
 
-![App Screenshot](./assets/Screenshot1.jpeg) 
-![App Screenshot](./assets/Screenshot2.jpeg)
-![App Screenshot](./assets/Screenshot5.jpeg)
-![App Screenshot](./assets/Screenshot6.jpeg)
-![App Screenshot](./assets/Screenshot7.jpeg)
-![App Screenshot](./assets/Screenshot3.jpeg)
-![App Screenshot](./assets/Screenshot4.jpeg)
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot1.jpeg) 
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot2.jpeg)
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg)
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg)
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg)
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg)
+![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg)
 
 ## Setup and Installation
 
