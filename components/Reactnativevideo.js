@@ -23,7 +23,7 @@ export default Reactnativevideo
 
 const styles = StyleSheet.create({
     video: { 
-        width: windowWidth,
+        width: windowWidth-20,
         height: 250,
       },
 })

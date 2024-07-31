@@ -5,9 +5,9 @@ import * as ImagePicker from 'expo-image-picker';
 import {Image} from 'react-native-compressor';
 import RNFS from 'react-native-fs';
 
-import CompressionSlider from './CompressionSlider';
-import Loadingspinner from './Loadingspinner';
-import Button from './Button';
+import CompressionSlider from '../components/CompressionSlider';
+import Loadingspinner from '../components/Loadingspinner';
+import Button from '../components/Button';
 
 
 
@@ -34,8 +34,6 @@ const Imagecompress = () => {
     const compressImage = async (compressionPercentage) => {
         setspinner(true)
         const quality=1-(compressionPercentage/100)
-        console.log(quality)
-        console.log(compressionPercentage,"per")
         try{
   
           const compressedUri = await Image.compress(
@@ -75,12 +73,23 @@ const Imagecompress = () => {
       const cancel= ()=>{
         setCompressedUri(null)
       }
-     
+   
 
+     //loading state
+     if (spinner)
+      { //navigation.navigate('Video')
+        return (
+          <View style={styles.container}>
+          <Loadingspinner text="loading..."/>
+         </View>
+        )
+      }   
+
+      
    //show compress video
    if (compressedUri)
     {
-      return (<View>
+      return (<View style={styles.container}>
         <Img style={styles.image}
         source={{
           uri: compressedUri,
@@ -91,7 +100,7 @@ const Imagecompress = () => {
     }
 
   return (
-    <>
+    <View style={styles.container}>
     {imageUri? <><Img
         style={styles.image}
         source={{
@@ -101,17 +110,30 @@ const Imagecompress = () => {
         <CompressionSlider onSave={compressImage}/>
         </View>
         </>
-        :<Text>No image yet</Text>}
+        :imageloading?(<Loadingspinner text="loading..."/>):(<Text style={styles.placeholdertext}>No image yet</Text>)}
     <Button onPress={pickImage} text="Pick Image" color="blue"/>
-    </>    
+    </View> 
+      
   )
 }
 
 export default Imagecompress
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'lightgreen',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
     image:{
         width:300,
-        height:200
+        height:200,
+        borderRadius:7
+    },
+    placeholdertext:{
+      fontSize:18,
+      fontWeight:'bold',
+      color:"grey"
     }
 })

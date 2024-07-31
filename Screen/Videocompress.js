@@ -6,15 +6,15 @@ import * as ImagePicker from 'expo-image-picker';
 import {Video} from 'react-native-compressor';
 import RNFS from 'react-native-fs';
 
-import CompressionSlider from './CompressionSlider';
-import Loadingspinner from './Loadingspinner';
-import Button from './Button';
-import Reactnativevideo from './Reactnativevideo';
+import CompressionSlider from '../components/CompressionSlider';
+import Loadingspinner from '../components/Loadingspinner';
+import Button from '../components/Button';
+import Reactnativevideo from '../components/Reactnativevideo';
 
 import {getOriginalBitrate, calculateTargetBitrate} from '../helper/Videobitrate'
 
 
-const Compress = () => {
+const Videocompress = () => {
     const [videoUri, setVideoUri] = useState(null);
     const [compressedUri, setCompressedUri] = useState(null);
     const [spinner,setspinner] = useState(false)
@@ -82,26 +82,31 @@ const Compress = () => {
     
     //loading state
     if (spinner)
-    {
-      return <Loadingspinner text="compressing..."/>
+    { 
+      return (<View style={styles.container}>
+        <Loadingspinner text="compressing..."/>
+      </View>)
     }
     
     //show compress video
     if (compressedUri)
     {
-      return (<View>
+      return (<View style={styles.container}>
+        <View style={styles.videocontainer}>
         <Reactnativevideo uri={compressedUri}/>  
+        </View>
         <Button onPress={saveCompressedVideo} text="Save" color="green"/>
         <Button onPress={cancel} text="cancel" color="red"/>
       </View>)
     }
 
     return (
-      <>
-      <View >
+      <View style={styles.container}>
          {videoUri ? (
             <View>
+              <View style={styles.videocontainer}>
               <Reactnativevideo uri={videoUri}/>
+              </View>
             <CompressionSlider onSave={compressVideo}/>
             </View>
           ) :(videoloading?(<Loadingspinner text="loading..."/>):
@@ -113,21 +118,32 @@ const Compress = () => {
         <Button onPress={pickVideo} text="Pick a video" color="blue"/>   
     </View>    
         
-      </>
     );
 }
 
 
 
-export default Compress
+export default Videocompress
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'lightgreen',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  videocontainer:{
+     alignItems:"center",
+     borderRadius: 7,
+    overflow: 'hidden', 
+  },
       textcontainer:{
         alignItems:"center"
       },
       placeholderText:{
         fontSize:18,
         fontWeight:'bold',
+        color:"grey"
       }
 })
 

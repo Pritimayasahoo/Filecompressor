@@ -1,19 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Compress from './components/Compress';
-import Imagecompress from './components/Imagecompress';
-import Audiocompress from './components/Audiocompress';
+import  Videocompress from './Screen/Videocompress';
+import Imagecompress from './Screen/Imagecompress';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Home from './Screen/Home';
 
 
-
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="dark" />
-      <Audiocompress/>
-    </View>
+    <>
+      <StatusBar style='auto'/>
+     <NavigationContainer>
+     <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }}/>
+        <Stack.Screen name='Video' component={Videocompress}/>
+        <Stack.Screen name='Image' component={Imagecompress}/>
+     </Stack.Navigator>
+     </NavigationContainer>
+     </>
+    
   );
 }
 
