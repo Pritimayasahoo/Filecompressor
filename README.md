@@ -20,19 +20,19 @@ This React Native application allows users to compress videos and images efficie
     <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot2.jpeg">
         <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot2.jpeg" alt="Screenshot2" width="150" height="300">
     </a>
-    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg">
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg">
         <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg" alt="Screenshot3" width="150" height="300">
     </a>
-    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg">
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg">
         <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg" alt="Screenshot4" width="150" height="300">
     </a>
-    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg">
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg">
         <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg" alt="Screenshot5" width="150" height="300">
     </a>
-    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg">
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg">
         <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg" alt="Screenshot6" width="150" height="300">
     </a>
-    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg">
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg">
         <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg" alt="Screenshot7" width="150" height="300">
     </a>
 </div>
