@@ -11,13 +11,32 @@ This React Native application allows users to compress videos and images efficie
 - **Efficient Compression**: Uses native mobile processing power for fast and efficient compression.
 - **Save Compressed Files**: Save compressed videos and images to the device's gallery.
 
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot1.jpeg) 
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot2.jpeg)
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg)
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg)
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg)
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg)
-![App Screenshot](https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg)
+## App Screenshots
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot1.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot1.jpeg" alt="Screenshot1" width="150" height="300">
+    </a>
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot2.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot2.jpeg" alt="Screenshot2" width="150" height="300">
+    </a>
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg" alt="Screenshot3" width="150" height="300">
+    </a>
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg" alt="Screenshot4" width="150" height="300">
+    </a>
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot5.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg" alt="Screenshot5" width="150" height="300">
+    </a>
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot6.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot3.jpeg" alt="Screenshot6" width="150" height="300">
+    </a>
+    <a href="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot7.jpeg">
+        <img src="https://github.com/Pritimayasahoo/Filecompressor/blob/master/assetes/Screenshot4.jpeg" alt="Screenshot7" width="150" height="300">
+    </a>
+</div>
+
 
 ## Setup and Installation
 
